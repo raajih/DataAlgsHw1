@@ -15,6 +15,11 @@ int main()
 	cout << gb.isEmpty() << endl;
 	cout << gb.contains(5) << endl;
 
+	gb.add(5);
+
+	cout << gb.getCurrentSize() << endl;
+	cout << gb.isEmpty() << endl;
+	cout << gb.contains(5) << endl;
 
 	return 0;
 }

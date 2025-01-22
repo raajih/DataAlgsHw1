@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Downloads\BagInterface.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="GameBag.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameBag.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
