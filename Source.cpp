@@ -21,5 +21,10 @@ int main()
 	cout << gb.isEmpty() << endl;
 	cout << gb.contains(5) << endl;
 
+	//Just showing that THIS FILE SHOULD HAVE GAME
+	//cout << "How many m?";
+	//Game game(m, n)
+	// if(game.winner(a, b, c, d)) cout<< "you win"!
+
 	return 0;
 }
