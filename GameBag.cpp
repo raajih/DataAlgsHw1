@@ -1,4 +1,9 @@
+//Raajih Roland
+//CIS 2207 N02
+//1/25/2025
+//Design a guessing game where the user specifies the amount of numbers and the range the numbers can be in.
 #include "GameBag.h"
+
 
 int GameBag::getCurrentSize() const
 {
@@ -9,15 +14,27 @@ bool GameBag::isEmpty() const
 {
     return (bag.size() == 0);
 }
-//TODO: implement
+
 bool GameBag::add(const int& item)
 {
     bag.push_back(item);
     return true;
 }
-//TODO: implement
+//Removes item from bag. Returns true if bag contains item, false if not.
 bool GameBag::remove(const int& item)
 {
+    if (this->contains(item)) //If bag contains item, remove it and return true.
+    {
+        for (int i = 0; i < bag.size(); i++)
+        {
+            if (bag[i] == item)
+            {
+                bag.erase(bag.begin() + i);
+                return true;
+            }
+        }
+        
+    }
     return false;
 }
 
@@ -25,10 +42,19 @@ void GameBag::clear()
 {
     bag.clear();
 }
-//TODO: implement
+
 int GameBag::getFrequencyOf(const int& item) const
 {
-    return 0;
+    int counter = 0;
+    for (int i = 0; i < bag.size(); i++)
+    {
+        if (bag[i] == item)
+        {
+            counter++;
+        }
+    }
+    
+    return counter;
 }
 
 bool GameBag::contains(const int& item) const
@@ -41,8 +67,8 @@ bool GameBag::contains(const int& item) const
     return false;
 }
 
-//TODO: implement
+
 std::vector<int> GameBag::toVector() const
 {
-    return std::vector<int>();
+    return bag;
 }
