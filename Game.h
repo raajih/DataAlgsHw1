@@ -24,5 +24,5 @@ public:
 	bool winner();
 	void setGuesses(std::vector<int>);
 	
-	//TODO: figure out what else I might need here...
+	
 };

@@ -47,6 +47,7 @@ int main()
 
 	} while (repeat == "Y" || repeat == "y");
 
+	cout << endl << "Goodbye!";
 	
 
 

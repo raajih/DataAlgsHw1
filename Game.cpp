@@ -24,7 +24,7 @@ int Game::getM()
     return m;
 }
 
-//Where i went to find information on random number generator in c++:
+//Where I went to find information on random number generator in c++:
 //https://www.reddit.com/r/learnprogramming/comments/5uu9eu/generating_random_number_in_c/?rdt=62218
 void Game::addRandomValues()
 {
