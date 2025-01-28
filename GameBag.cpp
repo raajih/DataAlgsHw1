@@ -67,8 +67,8 @@ bool GameBag::contains(const int& item) const
     return false;
 }
 
-
 std::vector<int> GameBag::toVector() const
 {
-    return bag;
+    std::vector<int> newBag = bag;
+    return newBag;
 }
